@@ -1,0 +1,54 @@
+
+.contact{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    .contact-header{
+        text-align: center;
+        h5{
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: $main-font;
+        }
+    }
+    .container{
+        width: 50%;
+        p{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .contact-form{
+            display: flex;
+            label{
+                font-weight: 600;
+            }
+            input,textarea{
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                border: 0;
+                padding: 1rem 2rem;
+                font-weight: 700;
+                transition: 0.3s;
+            }
+            input:hover,textarea:hover{
+                box-shadow: 0 0 0 0.2rem rgba($color: $color-purple, $alpha: 0.4);
+                transition: 0.3s;
+            }
+        }
+        .send-btn{
+            color: white;
+            background-color: $color-purple;
+            padding:1rem 2rem; 
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+        .send-btn:hover{
+            background-color: $color-pink;
+            transition: 0.3s;
+            box-shadow: 0 0 0.8rem 0.1rem black;
+        }
+    }
+}

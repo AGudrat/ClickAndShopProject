@@ -1,0 +1,53 @@
+.product-filter{
+    padding-top: 7rem;
+    .search{
+        background-color: transparent;
+            width: 50%;
+        border: 0;
+        border-bottom: 2px solid $color-pink;
+        input{
+            border: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 90%;
+            padding: 0.5rem 1rem;
+            background-color: white;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: 0;
+            padding: 0.5rem 1rem;
+            right: 0;
+        }
+        button:focus{
+            outline: none;
+        }
+        button:hover{
+            color: $color-pink;
+        }
+    }
+    .buttons{
+        .active{
+            background-color: $color-pink !important;
+        }
+        .button-value{
+            border: 0;
+            cursor: pointer;
+            background-color: $color-purple;
+            color: white;
+            border-radius: 0.3rem;
+            padding: 0.1rem 0.5rem;
+        }
+        button:focus{
+            outline: none;
+        }
+        button:hover{
+            background-color: $color-pink;
+        }
+    }
+}

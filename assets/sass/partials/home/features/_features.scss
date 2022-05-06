@@ -1,0 +1,22 @@
+.features{
+    padding-bottom: 1rem;
+    &-header-icon{
+        font-size: 2.5rem;
+        .bi::before{
+            font-weight: 600 !important;
+        }
+    }
+    &-header-text{
+        h4{
+            font-size: 1.1rem;
+            font-family: $main-font;
+            font-weight: 700;
+        }
+    }
+    &-content-text{
+        font-weight: 500;
+        font-size: 0.9rem;   
+        font-family: $main-font;
+        color: rgba($color: #000000, $alpha: 0.5);
+    }
+}

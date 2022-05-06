@@ -1,0 +1,51 @@
+.hero{
+        background-image: url('./assets/images/hero-bg.jpg');
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .head-title{
+            z-index: 100;
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: $main-font;
+            font-size: 2em;
+            .logo{
+                font-family: $logo-font;
+                font-size: 3rem;
+                letter-spacing: -1px;
+                color: $color-purple;
+                font-weight: 400;
+                span{
+                    color: $color-pink;
+                }
+            }    
+        }
+        .scroll-down{
+            z-index: 100;
+            text-decoration: none;
+            color: white;
+            background-color: $color-purple;
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .scroll-down:hover{
+            background-color: $color-pink;
+            transition: 0.3s;
+        }
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+}

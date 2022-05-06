@@ -1,0 +1,49 @@
+.models{
+    position: relative;
+    height: 100vh;
+    img{
+        height: 100vh;
+    }
+}
+.models::after{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    transition: 0.3s;
+}
+.models:hover::after{
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    transition: 0.3s;
+}
+.models:hover{
+    .to-products{
+        visibility: visible;
+        transition: 0.3s;
+    }
+}
+.to-products{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    font-size: 2rem;
+    left: 40%;
+    font-weight: 700;
+    background-color: $color-pink;
+    color: $color-purple;
+    padding: 1rem 2rem;
+    visibility: hidden;
+}
+.to-products:hover{
+    text-decoration: none;
+    color: $color-pink;
+    background-color: $color-purple;
+    transition: 0.3s;
+}

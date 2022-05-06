@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    integrity="sha512-Oy+sz5W86PK0ZIkawrG0iv7XwWhYecM3exvUtMKNJMekGFJtVAhibhRPTpmyTj8+lJCkmWfnpxKgT2OopquBHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">CLICK <span>and</span> SHOP</a>
+        <div class="navbar-items" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navlink-color-black" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-color-black" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-color-black" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-aside d-flex align-items-center justify-content-between">
+          <div class="navbar-basket">
+            <a href="basket.html" class="basket"><i class="bi bi-basket"></i>
+              <p>Basket</p>
+            </a>
+          </div>
+          <div class="navbar-sign">
+            <a href="login.html" class="sign"><i class="bi bi-person"></i></a>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="product-filter" id="product-filter">
+      <div class="container">
+        <div class="search mb-2" id="search-container">
+          <input type="search" id="search" placeholder="Write product name, type or brand that you are looking for">
+          <button id="search"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="buttons" id="buttons">
+          <button class="button-value active">All</button>
+          <button class="button-value">Cap</button>
+          <button class="button-value">Shoes</button>
+          <button class="button-value">T-Shirt</button>
+          <button class="button-value">Sock</button>
+          <button class="button-value">Dress</button>
+          <button class="button-value">Shirt</button>
+          <button class="button-value">Watch</button>
+          <button class="button-value">Jacket</button>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="row">
+         <div class="col-lg-2">
+           <!-- Gender Filtering -->
+            <div class="filter-wrapper mb-4">
+              <div class="filter-title mb-2">
+                Gender
+              </div>
+              <div class="filters ml-2">
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Man
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Woman
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kid
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Brand Filtering -->
+            <div class="filter-wrapper mb-4">
+              <div class="filter-title mb-2">
+                Brand
+              </div>
+              <div class="search-brand">
+                <input class="filter-input" type="text" placeholder="Search brand">
+              </div>
+              <div class="filters ml-2">
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pull & Bear
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Adidas
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nike
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Size Filtering -->
+            <div class="filter-wrapper mb-4">
+              <div class="filter-title mb-2">
+                Brand
+              </div>
+              <div class="search-brand">
+                <input class="filter-input" type="text" placeholder="Search brand">
+              </div>
+              <div class="filters ml-2">
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pull & Bear
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Adidas
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nike
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Color Filtering -->
+            <div class="filter-wrapper mb-4">
+              <div class="filter-title mb-2">
+                Brand
+              </div>
+              <div class="search-brand">
+                <input class="filter-input" type="text" placeholder="Search brand">
+              </div>
+              <div class="filters ml-2">
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pull & Bear
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Adidas
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nike
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Price Filtering -->
+            <!-- Material Filtering -->
+            <div class="filter-wrapper mb-4">
+              <div class="filter-title mb-2">
+                Brand
+              </div>
+              <div class="search-brand">
+                <input class="filter-input" type="text" placeholder="Search brand">
+              </div>
+              <div class="filters ml-2">
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pull & Bear
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Adidas
+                    </label>
+                  </div>
+                </div>
+                <div href="filter-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nike
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+
+         <div class="col-lg-10">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="product-card" id="card-1">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-11.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Dri-FIT Perforated Running Bucket</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="price">AZN 70</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-2">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-2.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Road Shoes</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="price">AZN 258</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-3">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-8.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Sportswear Club Men's T-Shirt</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="price">AZN 180</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-4">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-5.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Mens Blue Nike Flyknit Shoes.</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="price">AZN 310</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-5">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-9.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Sportswear Club Men's T-Shirt</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="price">AZN 199</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-6">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-10.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Boy's Ya Heritage 86 Swoosh AD Cap</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="price">AZN 50</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-7">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-12.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Everyday Kids' Cushioned Crew Socks (3 Pairs)</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="price">AZN 35</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product-card" id="card-8">
+                <div class="image-box">
+                  <img src="./assets/images/Products/pro-13.jpg" alt="" class="img-fluid">
+                </div>
+                <p class="product-name">Nike Men's 7 Running Shorts</p>
+                <div class="ratings">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="price">AZN 49</p>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
