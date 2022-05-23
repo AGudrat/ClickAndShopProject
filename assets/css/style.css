@@ -257,7 +257,7 @@ body {
 }
 
 .hero {
-  background-image: url("/assets/images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -657,6 +657,86 @@ footer p {
 
 .product-filter .buttons button:hover {
   background-color: #BD1E51;
+}
+
+.filter-wrapper {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.filter-wrapper .filter-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0.7rem 0.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.filter-wrapper .filter-title::before {
+  content: "\f107";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: 3%;
+  -webkit-transform: var(--rotateX);
+          transform: var(--rotateX);
+}
+
+.filter-wrapper .filter-title:hover {
+  background-color: #faf9f9;
+  color: #490B3D;
+}
+
+.filter-wrapper .filters {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.filter-wrapper .active-filter {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.filter-wrapper .search-brand {
+  margin-bottom: 0.5rem;
+}
+
+.filter-wrapper .search-brand input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-wrapper .search-brand input:focus {
+  outline: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.filter-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .products {

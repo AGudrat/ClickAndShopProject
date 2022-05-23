@@ -48,3 +48,18 @@ const navSlide = () => {
      })
 }
 navSlide();
+
+
+//Product Filter Dropdown
+var filterTitles = document.querySelectorAll('.filter-title');
+$.each(filterTitles, function (indexInArray, valueOfElement) {
+     $(valueOfElement).click(function () { 
+        if (valueOfElement.style.getPropertyValue('--rotateX') != 'rotateX(180deg)') {
+            valueOfElement.style.setProperty('--rotateX' , 'rotateX(180deg)')
+        } else{
+            valueOfElement.style.setProperty('--rotateX' , '')
+        }
+         var filters = this.nextElementSibling;
+         $(filters).toggleClass('active-filter')
+      })
+});
